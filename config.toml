@@ -1,0 +1,40 @@
+[api_keys]
+openai = "YOUR_OPENAI_API_KEY"  # OpenAI API key
+zhipu = "YOUR_ZHIPU_API_KEY"   # Zhipu API key
+ali = "YOUR_ALI_API_KEY"     # Alibaba Cloud API key
+tencent_secret_id = "YOUR_TENCENT_SECRET_ID"  # Tencent Cloud SecretId
+tencent_secret_key = "YOUR_TENCENT_SECRET_KEY" # Tencent Cloud SecretKey
+
+
+[model_config]
+openai_models = ["dall-e-2", "dall-e-3"]  # List of available OpenAI models
+openai_default = "dall-e-3"  # Default OpenAI model
+zhipu_model = "cogview-3"  # Zhipu model version
+tencent_region = "ap-guangzhou"  # Tencent Cloud region
+default_text_model = "gpt-4o" # Default text model
+
+[model_params]
+[model_params.openai]
+model = "dall-e-3"
+size = "1024x1024"
+quality = "standard"
+style = "natural"
+n = 1
+
+[model_params.zhipu]
+model = "cogview-3"
+size = "1024x1024"
+n = 1
+
+[model_params.tencent]
+resolution = "1024x1024"
+
+[model_params.ali]
+size = "1024*1024"
+n = 1
+
+[system]
+image_save_path = "generated_images"  # Path to save generated images
+csv_save_path = "csv"  # Path to save logs
+max_retries = 3  # Maximum number of retries for API calls
+timeout = 30  # Timeout for API calls (seconds) 
