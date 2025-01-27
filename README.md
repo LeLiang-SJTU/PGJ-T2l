@@ -1,4 +1,4 @@
-# PGJ-T2l
+# PGJ
 
 # Perception-guided Jailbreak against Text-to-Image Models
 
@@ -73,9 +73,16 @@ tencent_secret_key = "YOUR_TENCENT_SECRET_KEY" # Tencent Cloud SecretKey
 ## Visualization Example
 
 
-
+![alt text](Visualization.png)
 
 
 ## References
 
+```
+@article{huang2024perception,
+  title={Perception-guided jailbreak against text-to-image models},
+  author={Huang, Yihao and Liang, Le and Li, Tianlin and Jia, Xiaojun and Wang, Run and Miao, Weikai and Pu, Geguang and Liu, Yang},
+  journal={arXiv preprint arXiv:2408.10848},
+  year={2024}
+}
 ```
